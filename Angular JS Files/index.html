@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="adeayo" ng-controller="main_controller">
+    <head>
+        
+        <link rel="shortcut icon" type="image/png" href="assets/media/logo2.fw.png"/>
+<link rel="shortcut icon" type="image/png" href="assets/media/logo2.fw.png"/> 
+
+    <title>Adeayo.me</title>
+    <meta content="<%= metaTagsDescription %>" name="description" />
+    <meta content="<%= metaTagsRobots %>" name="robots" />
+    <meta content="<%= metaTagsKeyWords %>" name="keywords" />
+
+    <!-- Facebook meta tags-->
+    <meta property="og:type"  content="<%= metaTagsType %>" />
+    <meta property="og:title" content="<%= metaTagsTitle %>" />
+    <meta property="og:image" content="<%= metaTagsImg %>" />
+    <meta property="og:url"   content="<%= metaTagsUrl %>" />
+    <meta property="og:description" content="<%= metaTagsDescription %>" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="<%= metaTagsName %>" />
+    <meta itemprop="description" content="<%= metaTagsDescription %>" />
+    <meta itemprop="image" content="<%= metaTagsImg %>" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<%= metaTagsSite %>">
+    <meta name="twitter:url" content="<%= metaTagsUrl %>">
+    <meta name="twitter:title" content="<%= metaTagsTitle %>">
+    <meta name="twitter:description" content="<%= metaTagsDescription %>">
+    <meta name="twitter:image" content="<%= metaTagsImg %>">
+
+    
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/lodash/4.7.0/lodash.min.js"></script>  
+       <script type="text/javascript" src="assets/js/angular-simple-logger.js"></script> 
+       
+       
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDPezeZL78ke3Z5RyaidQkMtAZS0vXHTDE&libraries=places&sensor=false"></script>
+        <script type="text/javascript" src="assets/js/angular-google-maps.min.js"></script>
+        
+         <link rel="stylesheet" href="assets/css/autocomplete.css">
+       <script type="text/javascript" src="assets/js/autocomplete.js"></script> 
+       
+               <script src="assets/js/filestack.js" type="text/javascript"></script>
+
+       
+        <script src="//www.gstatic.com/firebasejs/live/3.6/firebase.js"></script>
+        <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="//use.fontawesome.com/281f829588.js"></script>
+         <script src="assets/js/ng-tags-input.js" type="text/javascript"></script>
+        <link href="assets/css/custom_ng-tags-input.css" rel="stylesheet" type="text/css"/>
+        
+       <script src="assets/js/angular-local-storage.js" type="text/javascript"></script>
+       
+
+                
+        <script src="assets/js/highlight.min.js" type="text/javascript"></script>
+        <script src="assets/js/angular-highlightjs.min.js" type="text/javascript"></script>
+        
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+        <script src="assets/js/angular-moment.min.js"></script>
+
+        <link href="//fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+        
+        <link href="assets/css/angular-material-custom.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/angular-material-custom.js" type="text/javascript"></script>
+        <script src="assets/js/mentio.js" type="text/javascript"></script>
+       <script src="assets/js/templates.js" type="text/javascript"></script>
+              
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="controllers/home.ctrl.js"></script>
+        <script type="text/javascript" src="controllers/main.ctrl.js"></script>
+        <script type="text/javascript" src="controllers/toolbar.ctrl.js"></script>
+        <script src="controllers/wall.ctrl.js" type="text/javascript"></script>
+         <script src="services/config.js" type="text/javascript"></script>
+        
+       <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
+
+        
+        <script src="assets/js/ace.js" type="text/javascript"></script>
+        <script src="assets/js/ui-ace.js" type="text/javascript"></script>
+        <link href="assets/css/xcode.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/xcode.js" type="text/javascript"></script>
+        
+        <script src="assets/js/color-thief.min.js" type="text/javascript"></script>
+        <script src="services/urlcrawler.js" type="text/javascript"></script>
+        <script src="assets/js/angulargrid.js" type="text/javascript"></script>
+        <script src="filters/cut.js" type="text/javascript"></script>
+        <script src="filters/query.js" type="text/javascript"></script>
+        <script src="assets/js/sugar.js" type="text/javascript"></script>
+        <script src="controllers/open-snip.ctrl.js" type="text/javascript"></script>
+        <script src="controllers/collaborator.ctrl.js" type="text/javascript"></script>
+        <script src="directives/err-src.js" type="text/javascript"></script>
+        <link href="assets/css/dracula.css" rel="stylesheet" type="text/css"/>
+        <script src="services/location_service.js" type="text/javascript"></script>
+        <!--
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-bridget.js"></script>
+        <script src="assets/js/ev-emitter.js"></script>
+        <script src="assets/js/matches-selector.js"></script>
+        <script src="assets/js/utils.js"></script>
+        <script src="assets/js/get-size.js"></script>
+        <script src="assets/js/item.js"></script>
+        <script src="assets/js/outlayer.js"></script>
+        <script src="assets/js/masonry.js"></script>
+        <script src="assets/js/imagesloaded.js"></script>
+        <script src="assets/js/angular-masonry.min.js"></script>
+        -->
+        
+        
+        <script src="assets/js/angular-clipboard.js" type="text/javascript"></script>
+        <link href="assets/css/toolbar.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+               <!-- <base href="/index.html"> -->
+
+        
+    </head>
+    <body class="ng-class: showGreenBack ?'post-menu': '';" ng-controller="toolbar_controller" ng-init="showGreenBack = false;" style="height:100%;overflow: auto;background: #E0E5EB !important;"> <!--post-menu-->
+   
+        <div ng-include="'templates/toolbar.html'"></div>
+  
+        <div ng-view class="ngview" style="width:100%;height: 100%;background-color:#E0E5EB !important;"></div>
+        
+        
+        <md-button ng-if="false" class="md-fab md-accent" aria-label="Add new" style="position: fixed !important;bottom:50px;right:50px;">
+             <md-tooltip md-direction="left">Add new</md-tooltip>
+            <i class="material-icons" style="margin-top: 20px !important;font-size:25px;">mode_edit</i>
+        </md-button>
+    
+          <md-progress-circular md-mode="indeterminate" style="position:fixed;top:48%;left:48%;" md-diameter="96" ng-show="utils.loading"></md-progress-circular>
+
+        
+    </body>
+</html>

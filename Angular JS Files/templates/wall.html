@@ -1,0 +1,499 @@
+<style>
+    
+    
+    @media only screen and (max-width:800px){
+    
+     .wall {
+            padding-left:10px;
+            padding-right:10px;
+    }
+
+     
+}
+
+@media only screen and (min-width:800px){
+    
+    .wall {
+            padding-left:200px;
+            padding-right:200px;
+    }
+
+}
+    
+    md-toolbar{
+        z-index: 1000 !important;
+    }
+    * {
+        outline:none !important;
+    }
+    
+    
+    .md-large {
+        width: 80px !important;height: 80px !important;
+        box-shadow: none !important;
+    } 
+    
+    .md-large:hover{
+        width: 100px !important;height: 100px !important;
+        -webkit-transition: all 400ms ease;
+        transition: all 400ms ease;
+    }
+    
+
+    
+ .notes {
+  position: relative;
+}
+
+.notes:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #E0E5EB  #E0E5EB #D0D1D1  #D0D1D1 ;
+  background: #658E15;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  /* Firefox 3.0 damage limitation */
+  display: block; width: 0;
+  z-index: 1000;
+}
+
+.notes.rounded {
+  -moz-border-radius: 5px 0 5px 5px;
+  border-radius: 5px 0 5px 5px;
+}
+
+.notes.rounded:before {
+  border-width: 8px;
+  border-color: #E0E5EB #E0E5EB  transparent transparent;
+  -moz-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+}
+
+    .toolbar-input md-input-container .md-errors-spacer{
+  min-height: 0px !important;
+}
+
+
+    md-sidenav {
+        border-right: #eee 1px solid;
+    }
+    
+    md-card {
+        outline: none !important;
+        position: relative;
+        cursor: pointer;
+        max-height: 500px !important;
+        -webkit-transition: all 400ms ease;
+        transition: all 400ms ease;
+        overflow: hidden !important;
+        background-color:#fff;
+    }  
+    
+    md-card.unSelectedCard:hover{
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 6px 5px -5px rgba(0, 0, 0, 0.12);
+    }
+    
+    md-card > md-card-content {
+        outline: none !important;
+    }
+ 
+    
+    md-card-actions > i:hover {
+        color: #000 !important;
+    }
+    
+    md-card-actions > i {
+        color: rgba(0,0,0,.54) !important;
+        font-size:8px !important;
+    }
+    
+    
+    .selectedCard {
+       box-shadow: 0px 0px 0px 4px #424242;
+    }
+    
+    md-card.text {
+    }
+    
+    md-card.text > md-card-content{
+        overflow: hidden !important;
+        font-family: 'Roboto Slab','Times New Roman',serif !important;
+        max-height: 275px !important;
+        margin-bottom: 5px !important;
+    }
+
+    md-card-header {
+        padding-bottom: 10px !important;
+    }
+    
+    
+    md-card-actions{
+        opacity: 0;
+        margin-top: 0px !important;
+    }
+    
+    md-card:hover md-card-actions {
+        opacity: 1;
+    }
+
+    md-card-actions {
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    padding:5px;
+  }
+  
+  .toggle{
+        opacity: 0;
+        margin-top: 0px !important;
+    }
+    
+    md-card:hover .toggle {
+        opacity: 1;
+    }
+
+    .toggle {
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+
+  md-toolbar.contextual-toolbar {
+      padding-left: 25px;
+      padding-right:25px;
+      position:fixed !important;
+      top:0 !important;
+      left: 0 !important;
+      z-index: 1000000000;
+      -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) !important;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) !important;
+  }
+  
+  .my-mini-fab {
+      height: 30px !important;
+      width: 30px !important;
+  }
+    
+/* when hiding the picture */
+.ng-hide-add         { animation:0.5s disappear ease; }
+
+/* when showing the picture */
+.ng-hide-remove      { animation:0.5s appear ease; }
+
+/* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
+/* flip in */
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+ 
+    md-card.image {
+        padding: 0px !important;
+    }
+    
+     md-card.image > md-card-content{
+        overflow: hidden !important;
+        font-family: 'Roboto Slab','Times New Roman',serif !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    md-card.image > md-card-content > img{
+       width: 100%;
+       overflow: hidden !important;
+       display: block;
+    }
+    
+    md-card.image > md-card-actions{
+        position: absolute;
+        bottom:0;
+    }
+    
+    md-card.image > md-card-actions{
+        background-color: rgba(255,255,255,0.6);
+        width: 100%;
+        margin: 0px !important;
+    }
+    
+    
+     md-card.image {
+        padding: 0px !important;
+    }
+    
+     md-card.image > md-card-content{
+        overflow: hidden !important;
+        font-family: 'Roboto Slab','Times New Roman',serif !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    md-card.image > md-card-content > img{
+       width: 100%;
+       overflow: hidden !important;
+       display: block;
+    }
+    
+    md-card.image > md-card-actions{
+        position: absolute;
+        bottom:0;
+    }
+    
+    md-card.image > md-card-actions{
+        background-color: rgba(255,255,255,0.98);
+        width: 100%;
+        margin: 0px !important;
+    }
+    
+    
+    
+ 
+     md-card.url {
+        padding: 0px !important;
+    }
+    
+     md-card.url > md-card-content{
+        overflow: hidden !important;
+        font-family: 'Roboto Slab','Times New Roman',serif !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        margin-bottom:35px !important;
+    }
+    
+    md-card.url > md-card-content > img{
+       width: 100%;
+       overflow: hidden !important;
+       display: block;
+    }
+    
+    md-card.url > md-card-content > p.title{
+       margin:16px;
+       font-weight:400;
+    }
+    
+    md-card.url > md-card-content > p.from{
+       margin:14px;
+       font-weight:400;
+       color: #BDBDBD !important;
+    }
+    
+    md-card.url > md-card-actions{
+        position: absolute;
+        bottom:0;
+    }
+    
+    
+    .action.material-icons {
+        color: rgba (0, 0, 0, .57) !important;
+    }
+    
+    .action.material-icons:hover {
+        color: #000 !important;
+    }
+
+
+    
+     md-card.colors {
+        padding: 0px !important;
+    }
+    
+     md-card.colors > md-card-content{
+        overflow: hidden !important;
+        font-family: 'Roboto Slab','Times New Roman',serif !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    .wrapper {
+        margin:16px !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .tag {
+        background-color: #eee;
+        border-radius: 3px;
+        margin-left:5px;
+        padding: 2px 5px 2px 5px;
+        font-size: 12px;
+            text-overflow: ellipsis;
+    }
+    
+    .tag:hover {
+        color: #000;
+    }
+    
+    
+    md-card.code{
+        background-color:#282a36 !important;
+    }
+    
+    .select {
+    background-color: #fff !important;
+    color:rgba(0,0,0,.84) !important;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+    border: 1px solid transparent;
+    }
+ 
+    .select.selected{
+    background-color: #212121 !important;
+    color:#fff !important;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+    border: 1px solid transparent;
+    }
+    
+    .md-tooltip {
+        text-transform: none !important;
+    font-size: 9pt !important;
+    padding:3px 5px 3px 5px;
+    background-color: #000 !important;
+    color: white !important;
+    border-radius: 5px;
+    }
+    
+    
+    .md-subheader-inner{
+        padding-left: 0px !important;
+        margin: 0px !important;
+    }
+    
+    
+    
+    .hljs{
+        overflow:hidden !important;
+    }
+    
+    
+    md-subheader  {
+        font-weight: bold !important;
+    }
+    
+    
+    
+    
+    @media only screen and (max-width:650px){
+ 
+        .content {
+            padding-left:0px;
+         }
+         
+         md-sidenav, .md-sidenav-left {
+             display:none !important;
+         }
+    }
+
+    @media only screen and (min-width:650px){
+
+        .content {
+       padding-left:330px;
+        }
+    }
+    
+    .gray{
+    color:gray !important;
+    }
+
+    </style>
+    
+    
+<div style="padding-top:95px;" class="wall">
+    
+    <div style="padding-left:25px !important;">
+    <p> 
+        <span  class="md-display-1">Welcome to my wall</span>
+        <br>
+        <br>
+        <span class="md-subhead gray"> I built this for fun to show case my programming skills :). The entire site is built with AngularJS 1.5 with Angular Material UI. I used Firebase for data storage . I call <a href>sightengine api</a> from a NodeJS server running on Heroku to screen all images 
+            posted for nudity and explicit content. Leave me a comment, quote or image! Don't be shy! Also check out the source code here on <a>github.</a> </span>
+        
+    </p>
+    </div>
+      <div class="wrapper"> <!--class="dynamic-grid" angular-grid="pins" ag-grid-width="250" ag-gutter-size="10" ag-id="gallery" ag-refresh-on-img-loads="true" >-->
+            <div class="masonry">
+         
+    <div class="item" ng-repeat="item in posts track by $index">
+        
+        <!-- TEXT -->
+        <md-card class=" note text ng-class: item.selected ?'selectedCard': 'unSelectedCard';" ng-if="item.type === 'text'">
+        <md-card-content>
+            
+            <p class="ng-class: item.content.length < 100 ?'md-headline': '';">
+                {{item.content | cut:true:520:' ...'}}
+            </p>
+            
+            
+            <small class="gray" am-time-ago="item.createdAt | amFromUnix"></small>
+            
+            <br>
+            <small ng-if="item.place" style="color:blueviolet;">       
+                <span class="gray"> at </span>
+                  {{item.place.formated_address}}</small>
+
+   
+        </md-card-content>
+
+      </md-card>
+        
+        
+        
+        <!-- IMAGE -->
+        <md-card   class=" note image ng-class:item.key; ng-class: item.selected ?'selectedCard': 'unSelectedCard';" ng-if="item.type === 'image'">
+        <md-card-content>
+        <img ng-src="{{item.content}}" style="">
+        
+
+        </md-card-content>
+            
+              <md-card-actions layout="row" layout-align="start center" ng-if="!selectionMode">
+               
+            <small class="gray" am-time-ago="item.createdAt | amFromUnix"></small>
+            
+            <br>
+            <small ng-if="item.place" style="color:blueviolet;">       
+                <span class="gray"> at </span>
+                  {{item.place.formated_address}}</small>
+
+                          
+            </md-card-actions>
+            
+         
+      </md-card>
+        
+  
+   
+ 
+    
+    </div>
+         
+        </div>
+    </div>
+    </div>
+    
+     <md-button ng-click="openTextDialog()"  class="menu-open-button animation-target md-fab md-accent" aria-label="Add new" style="position: fixed !important;bottom:50px;right:50px;">
+             <md-tooltip md-direction="bottom">Add new</md-tooltip>
+            <i class="material-icons white" style="margin-top: 20px !important;font-size:25px;">note_add</i>
+</md-button>
+    

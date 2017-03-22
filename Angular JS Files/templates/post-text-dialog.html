@@ -1,0 +1,67 @@
+<div role="dialog" class="my-dialog">
+    
+        <form name="form"> 
+            
+            <div style="">
+                
+                
+                <md-subheader class="md-no-sticky" style='font-weight: bold !important;background:transparent !important;margin-bottom:0px !important;padding-bottom: 0px !important;'>NEW POST</md-subheader>
+
+                                
+              
+                
+                <br>
+                
+                <md-input-container style="width:100% !important;" ng-if="!isImage">      
+                <textarea  style="width:100% !important;max-height: 350px;overflow-y: auto;" required minlength="5" maxlength="5000"  placeholder="Your text goes here" flex="" class="clear-input" ng-model="data.text" rows="8"></textarea>
+                
+                <div ng-messages="false" ng-if="showError" role="alert">
+                <div>
+                    <br>
+                   {{errorMessage}}
+                </div>
+              </div>
+                </md-input-container>
+                
+                
+                <div ng-if="isImage" class="img-wrap">
+                <img  ng-src="{{data.image}}" style="max-width:600px;max-height:300px;display:block;">
+                <md-button class="md-fab md-mini close" ng-click="clearImage()">
+                     <md-tooltip md-direction="bottom">Remove Image</md-tooltip>
+                    <md-icon><i class="material-icons">close</i></md-icon>
+                </md-button>
+                </div>
+                
+                
+                <p ng-if="data.place"> - at <a href>{{data.place.formated_address}}</a> 
+                <md-button class="md-icon-button " ng-click="data.place = null;">
+                            <md-tooltip md-direction="bottom">Remove Location</md-tooltip>
+                    <md-icon><i class="material-icons">close</i></md-icon>
+                </md-button></p>
+                
+                <md-button class="md-icon-button" ng-click="OpenCloudinaryWidget()">
+                            <md-tooltip md-direction="bottom">Add Image</md-tooltip>
+                    <md-icon><i class="material-icons">photo_camera</i></md-icon>
+                </md-button>
+                 
+                <md-button class="md-icon-button" ng-click="openLocationDialog()">
+                    <md-tooltip md-direction="bottom">Add Location</md-tooltip>
+                    <md-icon><i class="material-icons">place</i></md-icon>
+                </md-button>
+                
+                
+                
+            </div>
+            
+        </form>    
+                   
+    
+               <section layout="row" layout-sm="column" layout-align="end">         
+                <md-button class="spacing-15" ng-click="cancel()">Close</md-button> 
+                <md-button ng-disabled="posting || (!form.$valid && !isImage)" class="md-raised md-primary spacing-15" ng-click="savePin(form.$valid)">
+                    Post
+                        <md-progress-circular style="display:inline-block;margin-bottom: -5px;" ng-hide="!posting" class="md-accent" md-diameter="20"></md-progress-circular>
+                </md-button> 
+                 </section>
+                   
+</div>

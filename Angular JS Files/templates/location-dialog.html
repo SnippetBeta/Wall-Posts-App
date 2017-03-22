@@ -1,0 +1,37 @@
+<style>
+    .angular-google-map-container { height: 250px; width:350px; }
+</style>
+<div role="dialog" class="my-dialog">
+    
+        <form name="form"> 
+            
+            <div style="">
+                
+                
+                <md-subheader class="md-no-sticky" style='font-weight: bold !important;background:transparent !important;margin-bottom:0px !important;padding-bottom: 0px !important;'>ADD YOUR LOCATION</md-subheader>
+
+                
+              <ui-gmap-google-map center='map.center' zoom='map.zoom'  options="map.options">
+               </ui-gmap-google-map>
+                
+                <p> 
+                    <br>
+                    Address: {{info.place.formated_address || 'Unset'}}
+                </p>
+                <md-input-container style="width:100%;">
+                    <input required g-places-autocomplete options="autocompleteOptions" ng-model="info.location" placeholder="Enter Location">
+                </md-input-container>
+                
+            </div>
+            
+        </form>    
+                   
+    
+               <section layout="row" layout-sm="column" layout-align="end">         
+                <md-button class="spacing-15" ng-click="cancel()">Close</md-button> 
+                <md-button ng-disabled="!location_set" class="md-raised md-primary spacing-15" ng-click="submit()">
+                    Add
+                </md-button> 
+                 </section>
+                   
+</div>
