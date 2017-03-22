@@ -1,0 +1,495 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2017, 12:27:25 PM
+    Author     : lifoma
+*/
+
+
+html {
+  height: 100%;
+  width: 100%;
+  background: #E0E5EB !important;
+}
+
+md-tabs, md-content{
+    background-color: #fff;
+}
+
+.my-dialog{
+    padding:16px !important;
+}
+
+.my-code-dialog{
+    max-height:100% !important;
+    padding:16px !important;
+    overflow: hidden !important;
+}
+
+md-divider{
+    margin-bottom:5px;
+}
+
+.circle {
+	width: 45px;
+	height: 45px;
+        background-color: #000;
+	-moz-border-radius: 45px;
+	-webkit-border-radius: 45px;
+        outline:none !important;
+	border-radius: 45px;
+        margin: 5px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12) !important;
+}
+
+.bigcircle {
+	width: 90px;
+	height: 90px;
+        background-color: #000;
+	-moz-border-radius: 45px;
+	-webkit-border-radius: 45px;
+        outline:none !important;
+	border-radius: 45px;
+        margin: 5px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12) !important;
+}
+
+.cirle-desc {
+  margin-left: 5px;
+  font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    overflow: auto;
+    background-color: #fff;
+    margin: 0;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+
+.parent {
+    width:100%;
+    height: 100%;
+    /*padding-left:50px;
+    padding-right:50px;*/
+}
+
+md-card.board{
+    width: 200px;
+    height:200px;
+}
+
+
+
+@media only screen and (max-width:350px){
+    
+    
+    .login-form {
+    position: fixed;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    }
+     
+}
+
+@media only screen and (min-width:350px){
+    
+    .login-form {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:350px;
+    }
+}
+
+
+ng-view {
+    margin-top:65px;
+    height:100%;
+    width:100%;
+}
+
+
+/* headlines with lines */
+.decorated{
+     overflow: hidden;
+     text-align: center;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100px; /* half of limiter*/
+    margin: 0 20px;
+}
+.decorated > span:before{
+    right: 100%;
+}
+.decorated > span:after{
+    left: 100%;
+}
+
+.smallcircleimage {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+}
+
+.menusmallcircleimage {
+    width: 45px; 
+    height:45px; 
+    border-radius: 50%;
+}
+
+.midcircleimage {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+}
+
+.midcircleimage2 {
+    width: 43px; 
+    height: 43px; 
+    border-radius: 50%;
+}
+
+ .grid-image {height: 250px;max-width:450px;overflow:hidden;border-radius: 3px;margin:10px;cursor: pointer;}
+
+
+.largecircleimage {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%;
+}
+
+.largeimage {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 5%;
+}
+
+.white{
+    color:white !important;
+}
+
+
+.angular-google-map-container { height: 250px; }
+
+@media only screen and (max-width:800px){
+    
+    
+  .post-code-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    overflow: hidden;
+  }
+
+     
+}
+
+@media only screen and (min-width:800px){
+    
+    .post-code-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 800px;
+    overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    
+    
+   .post-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    overflow: hidden !important;
+  }
+  
+  .location-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 80%;
+    overflow: hidden;
+  }
+  
+  .open-text-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    
+    overflow: hidden;
+  }
+
+     
+}
+
+@media only screen and (min-width:600px){
+    
+    .post-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 600px;
+    overflow: hidden;
+    }
+
+    .location-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    width: 500px;
+    overflow: hidden;
+    }
+}
+
+
+
+.choose-dialog {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0 13px 19px 2px rgba(0, 0, 0, 0.14),
+        0 5px 24px 4px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+  }
+
+  
+  .img-wrap {
+    position: relative;
+    }
+    .img-wrap .close {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        z-index: 100;
+    }
+
+
+.dialog {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+      0 13px 19px 2px rgba(0, 0, 0, 0.14),
+      0 5px 24px 4px rgba(0, 0, 0, 0.12);
+  width: 500px;
+  overflow: hidden;
+}
+
+.dialog-content {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.demo-dialog-content img {
+  height: 300px;
+  margin: auto;
+}
+
+.dialog-button {
+  width: 100%;
+}
+
+.demo-menu-example {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+      0 13px 19px 2px rgba(0, 0, 0, 0.14),
+      0 5px 24px 4px rgba(0, 0, 0, 0.12);
+  width: 256px;
+}
+
+.demo-menu-item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  padding: 0 16px;
+  position: relative;
+  transition: background 0.15s linear;
+  width: auto;
+}
+
+.demo-menu-item:hover,
+.demo-menu-item:focus {
+  background-color: rgb(238, 238, 238);
+}
+
+.demo-menu-item.selected {
+  color: rgb(16, 108, 200);
+}
+
+/* ng module css */
+.drop {
+  display: block;
+  position: absolute;
+  background: hsl(180, 40%, 80%);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+  width:200px;
+  height:200px;
+}
+
+.drop.animate {
+  animation: drop 1.5s ease-out;
+}
+
+
+@keyframes drop {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+.dynamic-grid {
+  position: relative;
+  display: none;
+}
+.dynamic-grid.angular-grid {
+  display: block;
+}
+.grid {
+  position: absolute;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.grid.ng-leave {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+.grid.ng-leave.ng-leave-active {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+}
+.grid.ng-enter {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms;
+  -webkit-transform: scale(0.5);
+   transform: scale(0.5);
+  opacity: 0;
+}
+.grid.ng-enter.ng-enter-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.grid-img {
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.grid-img.img-loaded {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+.wrapper {
+    width: 95%;
+}
+
+.masonry {
+    padding: 0;
+    -moz-column-gap: 5px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+}
+
+.item {
+    display: inline-block;
+    width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1150px;
+    }
+}
+

@@ -1,0 +1,347 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2017, 12:22:48 PM
+    Author     : lifoma
+*/
+
+md-toolbar .with-shadow{
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.ease{
+    -webkit-transition: all 400ms ease;
+        transition: all 400ms ease;
+}
+
+
+md-toolbar .fixed-top{
+    position: fixed !important;
+}
+md-toolbar .with-padding {
+    padding-left:50px !important;
+    padding-right:50px !important;
+}
+.clear-input{
+    border: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    width: 100%;
+    resize: none;
+    font-family: 'Roboto Slab','Times New Roman',serif !important;
+}
+
+.eee-input{
+    border: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    width: 100%;
+    resize: none;
+    background-color: #eee;
+    font-family: 'Roboto Slab','Times New Roman',serif !important;
+}
+
+.clear-input-big{
+    border: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    width: 100%;
+    resize: none;
+    font-family: 'Roboto Slab','Times New Roman',serif !important;
+    font-size: 25pt;
+}
+
+
+  
+.clear-input:active::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);
+}
+ 
+.clear-input:active::-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.clear-input:active::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.clear-input:active::-ms-input-placeholder {  
+   color: rgba(0,0,0,0.5);  
+}
+
+
+md-menu-content, md-menu {
+   z-index: 29000 !important;
+}
+
+
+/*
+md-menu-content {
+    border-radius: 3px !important;
+    border-bottom: 1px solid #eee;
+}
+
+md-menu-content:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 6px;
+    z-index: 10;
+}
+md-menu-content:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 4px;
+    z-index: 9;
+}
+
+*/
+
+.spacing {
+    margin-left:5px !important;
+    margin-right:5px !important;
+}
+
+.spacing-15 {
+    margin-left:15px !important;
+    margin-right:15px !important;
+}
+
+.big-icon-button{
+    width: 50px !important;
+    height: 50px !important;
+}
+.big-icon-button i{
+    font-size: 25px;
+}
+
+.container-1 i{
+-webkit-user-select: none !important; /* Chrome/Safari */        
+-moz-user-select: none !important; /* Firefox */
+-ms-user-select: none !important; /* IE10+ */
+transition: visibility 0.5s linear;
+}
+
+.clear-icon{
+    outline: none !important;
+}
+
+#clear:focus {
+    outline: none !important;
+    border: 0px !important;}
+#clear:hover, #clear:focus {
+    text-decoration: none !important; }
+
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-1:before,
+.container-1:after {
+    content : "";
+    display : table;
+}
+.container-1:after {
+    clear : both;
+}
+
+.container-1 input#search{
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Roboto, "Helvetica Neue", sans-serif !important;
+  
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  
+  -webkit-transition: background .75s ease;
+    -moz-transition: background .75s ease;
+    -ms-transition: background .75s ease;
+    -o-transition: background .75s ease;
+    transition: background .75s ease;
+
+    -webkit-transition: color .75s ease;
+    -moz-transition: color .75s ease;
+    -ms-transition: color .75s ease;
+    -o-transition: color .75s ease;
+    transition: color .75s ease;
+    
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.0), 0 1px 1px 0 rgba(0,0,0,.0), 0 2px 1px -1px rgba(0,0,0,.0);
+   
+}
+
+
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+    color: rgba(0,0,0,0.87);
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+
+  }
+  
+input#search:valid { 
+    outline:none;
+    background: #ffffff !important;
+    color: rgba(0,0,0,0.87) !important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}      
+
+input#search:valid ~  span.search-icon{ 
+    color: #63717f !important;
+}
+
+input#search:valid ~ span.clear-icon{ 
+    display: block !important;
+}
+
+input#search:invalid ~ span.clear-icon{ 
+    display: none !important;
+} 
+  
+.container-1 input#search{
+    color: #fff;
+}
+
+  
+.container-1 input#search:active::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);
+}
+ 
+.container-1 input#search:active::-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.container-1 input#search:active::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.container-1 input#search:active::-ms-input-placeholder {  
+   color: rgba(0,0,0,0.5);  
+}
+
+
+
+
+
+
+.container-1 input#search:focus::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);
+}
+ 
+.container-1 input#search:focus::-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.container-1 input#search:focus::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.container-1 input#search:focus::-ms-input-placeholder {  
+   color: rgba(0,0,0,0.5);  
+}
+
+
+
+.container-1 input#search:hover::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);
+}
+ 
+.container-1 input#search:hover::-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.container-1 input#search:hover::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,0.5);  
+}
+ 
+.container-1 input#search:hover::-ms-input-placeholder {  
+   color: rgba(0,0,0,0.5);  
+}
+
+
+
+
+
+
+
+
+.container-1 input#search::-webkit-input-placeholder {
+   color: #fff;
+}
+ 
+.container-1 input#search::-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+ 
+.container-1 input#search::-ms-input-placeholder {  
+   color: #fff;  
+}
+
+.container-1 .search-icon{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  margin-left: 17px;
+  margin-top: 8px;
+  z-index: 1;
+  color: #fff !important;
+}
+
+.container-1 .clear-icon{
+  position: absolute;
+  top: 0px;
+  right:0px;
+  margin-right: 17px;
+  margin-top: 8px;
+  z-index: 1;
+  color: #4f5b66;
+  cursor: pointer !important;
+}
+
+
+input#search::active + span.search-icon{
+    color: #4f5b66 !important;
+}
+
+
+input#search::focus  +  span.search-icon{
+    color: #4f5b66 !important;
+}
+
+
+input#search::hover + span.search-icon{
+    color: #4f5b66 !important;
+}
+
+
+
+
+
+
+
